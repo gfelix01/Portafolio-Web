@@ -358,3 +358,50 @@ gap: 1.875rem;
 .services_title{
     margin-bottom: 0.8em;
 }
+/*=============Resume===============*/
+.resume__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.75rem;
+
+}
+.resume__title{
+    color: var(--text-color-alt);
+    letter-spacing: 0.4em;
+    margin-bottom: 2.8em;
+}
+
+.resume__item {
+    border-left: 2px solid var(--primary-color);
+    padding-left: 1.6rem;
+    position: relative;
+
+}
+.resume__item:not(:last-child){
+    padding-bottom: 3rem;
+}
+
+.resume__item::before{
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    position: absolute;
+    left: -0.56rem;
+    background-color: var(--bg-color);
+
+}
+.resume__subtitle{
+    color: var(--primary-color);
+    margin-bottom: 0.36em;
+
+}
+.resume__date {
+    color: var(--text-color-alt);
+    margin-bottom: 0.7em;
+
+}
+.resume__description {
+    text-align:justify;
+    
+}
