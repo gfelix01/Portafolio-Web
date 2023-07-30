@@ -14,13 +14,10 @@ JavaScript para interactividad y funcionalidad dinámica en el cliente.
 
 jQuery para simplificar el manejo de eventos y la manipulación DOM.
 
-PHP para programación del lado del servidor y conexión a bases de datos.
 
-MySQL como sistema de gestión de bases de datos relacionales.
 
-Bootstrap para un desarrollo frontend rápido y receptivo.
 
-XAMPP para configurar un servidor local y probar proyectos localmente.
+
 
 Mi objetivo al compartir mi cartera en GitHub es brindar a los visitantes una visión clara y completa de mi trabajo, así como invitar a la colaboración y comentarios constructivos para mejorar mis habilidades y proyectos.
 
