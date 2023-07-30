@@ -127,6 +127,12 @@ outline: none;
     font-size: var(--fs-sm);
     line-height: 1.67em;
 }
+ .skills__title,
+.resume__title{
+    color: var(--text-color-alt);
+    letter-spacing: 0.4em;
+    margin-bottom: 2.8em;
+}
 /*=============Header===============*/
 
 .header {
@@ -404,4 +410,34 @@ gap: 1.875rem;
 .resume__description {
     text-align:justify;
     
+}
+/*=============Skills===============*/
+.skills__container{
+    grid-template-columns: repeat(2, 445px);
+    column-gap: 7rem;
+}
+
+.skills__list{
+    row-gap: 1.8rem;
+}
+
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.626rem;
+}
+
+.skills__bar,
+.skills__percentage{
+    height: 5px;
+    border-radius: 0.25rem;
+
+}
+.skills__bar{
+    background-color: var(--bg-color-alt);
+}
+
+.skills__percentage{
+    display: block;
+    background-color: var(--primary-color);
 }
