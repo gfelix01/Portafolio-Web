@@ -340,9 +340,77 @@ If you are looking for a dedicated, creative web developer who is eager to take 
 <!--================Projects=======================--> 
  <section class="work section container" id="portfolio">
     <h2 class="section__title">Work_</h2>
+    
+    <div class="project__categories">
+        <button class="category__btn text-xs active-work"
+        data-filter="all">
+        ALL
+    </button>
+        <button class="category__btn text-xs " data-filter=".app">
+            APPS
+
+        </button>
+        <button class="category__btn text-xs" data-filter=".web">
+            WEB-SITES
+
+        </button>
+        <button class="category__btn text-xs" data-filter=".landing">
+            LANDING PAGES
+
+        </button>
+       </div>
+
+
+         <div class="projects__container grid">
+            <div class="project__item grid mix web">
+                <img src="css/img/login.png" alt="" class="project__img">
+              <div class="project__data">
+                    <h3 class="project__title text-lg">Login--Forms</h3>
+                    <p class="proyect__description">This is a login project I developed using HTML, CSS, and JavaScript. It provides a simple login form with username and password validation. Users must enter a valid username and password to access. The JavaScript code handles form validation and bypasses the default submit. Additionally, additional logic can be added, such as submitting data to a server for authentication. Feel free to explore the code and use it as a starting point for your own authentication project.</p>
+                    <h4 class="project__stack text-xs">USED STACK:</h4>
+                    <ul class="tags text-sm">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                     </ul>
+                <a href="https://github.com/gfelix01/Login--Forms" class="project__link text-sm">https://github.com/gfelix01/Login--Forms</a>
+             </div>
+             </div>
+
+             <div class="project__item grid mix landing">
+                <img src="css/img/proyecto Documentacion Java.png" alt="" class="project__img">
+              <div class="project__data">
+                    <h3 class="project__title text-lg">LANDING-PAGE</h3>
+                    <p class="proyect__description">A technical documentation page containing a main element with id="main-doc", several section elements with class "main-section", a navigation element with id="navbar", and links that allow navigation to the corresponding sections in the #main-doc element. It also includes responsive styles to display the navigation bar on the left side on regular size devices.</p>
+                    <h4 class="project__stack text-xs">USED STACK:</h4>
+                    <ul class="tags text-sm">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                   
+                     </ul>
+                <a href="https://gfelix01.github.io/Documentation-page/" class="project__link text-sm">https://gfelix01.github.io/Documentation-page/</a>
+             </div>
+             </div>
+
+             <div class="project__item grid mix app ">
+                <img src="css/img/personal.png" alt="" class="project__img">
+              <div class="project__data">
+                    <h3 class="project__title text-lg">Assistance system</h3>
+                    <p class="proyect__description">Customer assistance and registration system in WinForms C# would facilitate customer management, their visits and services in a business or entity, improving efficiency and providing a clearer view of customer behavior and preferences..</p>
+                    <h4 class="project__stack text-xs">USED STACK:</h4>
+                    <ul class="tags text-sm">
+                    <li>C#</li>
+                    
+                   </ul>
+                <a href="https://github.com/gfelix01/Sistema-asistencia" class="project__link text-sm">https://github.com/gfelix01/Sistema-asistencia</a>
+             </div>
+             </div>
+        </div>
  </section>
       </main>
-     <!--========JS==========--> 
+     <!--============Mixitup=============--> 
+     <script src="js/mixitup.min.js"></script>
+     <!--============JS=============--> 
     <script src="js/main.js"></script>
 </body>
 </html>
