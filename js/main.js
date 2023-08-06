@@ -22,7 +22,7 @@ linkWork.forEach ((a) => a.addEvenListener('click', activeWork));
 
 /*================Testimonial Swiper================*/
 // Initialize Swiper carousel
-var testiSwiper = new Swiper('.testimonial__container', {
+var testiSwiper = new Swiper('.testimonial__container ', {
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
