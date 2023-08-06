@@ -16,7 +16,7 @@ function activeWork() {
     this.classList.add('active-work');
 } 
   
-linkWork.forEach ((a) => a.addEvenListener('click', activeWork));
+linkWork.forEach ((a) => a.addEventListener('click', activeWork));
 
 
 
