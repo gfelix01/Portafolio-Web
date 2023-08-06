@@ -21,15 +21,20 @@ linkWork.forEach ((a) => a.addEvenListener('click', activeWork));
 
 
 /*================Testimonial Swiper================*/
+// Initialize Swiper carousel
 var testiSwiper = new Swiper('.testimonial__container', {
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    mousewheel: true,
-    keyboard: true,
-  });
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
+});
+
+
+
+  
