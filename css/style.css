@@ -531,14 +531,14 @@ gap: 1.875rem;
 }
 
   
-    /*=============Testimonial===============*/
+    /*=============Testimonials===============*/
     .testimonial__bg{
         background: url(img/61659c6cb074dfb0ad76b776ff824bc4.jpg);
         background-size: cover;
         background-position: 50%;
         position: relative;
     }
-    .testimonial__bg::before{
+    .testimonial__bg::before {
         content: '';
         background: var(--linear-gradient);
         height: 100%;
@@ -563,7 +563,6 @@ gap: 1.875rem;
     .testimonial__container{
         padding-top: 5rem;
         padding-bottom: 7.8rem;
-
     }
     .testimonial__item{
         padding: 0 5.75rem;
@@ -581,8 +580,7 @@ gap: 1.875rem;
         font-weight: 400;
 
     }
-    
-    .author__project {
+    .author__project{
         font-style: italic;
         opacity: 0.7;
         margin-bottom: 1.25em;
@@ -596,18 +594,34 @@ gap: 1.875rem;
         background-color: #a98a79;
         margin-bottom: 1.25rem;
     } 
+   
 
-     .swiper-button-next:after,
-     .swiper-button-prev::after {
-      content: '';
+    .swiper-button-next:after,
+    .swiper-button-prev::after {
+      content:'';
     }
 
-     .swiper-button-next img,
-     .swiper-button-prev img {
+    .swiper-button-next img,
+    .swiper-button-prev img {
       width: 20px;
       height: 20px;
     }
 
-    .swiper-pagination-bullets.swiper-pagination-horizontal{
+  /* Puedes agregar estilos adicionales aquí, como colores, fondos, etc. */
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
         bottom: 3.25rem;
+        
+    }
+    .swiper-pagination-bullet{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid #fff;
+        opacity: 1;
+        margin: 0 3px !important;
+    }
+
+    .swiper-pagination-bullet-active{
+        background-color: #fff;
     }
