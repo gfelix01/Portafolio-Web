@@ -625,3 +625,11 @@ gap: 1.875rem;
     .swiper-pagination-bullet-active{
         background-color: #fff;
     }
+
+    
+    /*=============Blog===============*/
+    .posts___container{
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1.875rem;
+        margin-bottom: 2.5rem;
+    }
