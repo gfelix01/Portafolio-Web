@@ -1,5 +1,20 @@
 /*=============Google Fonts===============*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Trocchi&display=swap');
+/* Estilos para dispositivos con un ancho máximo de 768px (tablets y móviles) */
+@media (max-width: 768px) {
+    /* Agrega aquí los estilos para pantallas pequeñas */
+    /* Por ejemplo: ajustar márgenes, reducir tamaños de fuente, cambiar diseño */
+}
+
+/* Estilos para dispositivos con un ancho máximo de 576px (móviles) */
+@media (max-width: 576px) {
+    /* Agrega aquí los estilos para pantallas aún más pequeñas */
+}
+
+/* También puedes usar min-width para aplicar estilos a medida que la pantalla se hace más grande */
+@media (min-width: 992px) {
+    /* Agrega aquí los estilos para pantallas más grandes */
+}
 
 
 /*=============CSS VARIABLES===============*/
@@ -632,4 +647,8 @@ gap: 1.875rem;
         grid-template-columns: repeat(3,1fr);
         column-gap: 1.875rem;
         margin-bottom: 2.5rem;
+    }
+    .post__content{
+        border: 1px solid var(--border-color);
+        padding: 1.25rem 1.875rem 2.5rem;
     }
