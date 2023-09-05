@@ -715,3 +715,12 @@ gap: 1.875rem;
     font-weight:  var(--bold);
     text-transform: uppercase;
  }
+.contact__list dd{
+    padding-left: 6.25em;
+    margin-bottom: 0.94em;
+
+}
+.contact__socials li {
+    margin-bottom: 0.75rem;
+    ;
+}
