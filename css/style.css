@@ -669,3 +669,49 @@ gap: 1.875rem;
     color: var(--text-color-alt);
     text-align: justify;
    }
+
+   /*=============Contact==================*/
+   .contact{
+    background: url(img/paraiso.jpg);
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+}
+.contact::before {
+    content: '';
+    background: var(--linear-gradient);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.contact__content{
+    z-index:10;
+    position: relative;
+}
+.contact__container{
+    grid-template-columns: 4fr 5fr 3fr;
+    column-gap: 1.875rem;
+    padding-top: 1.25rem;
+}
+ .contact .section__title,
+ .contact__list,
+ .contact__social-link,
+ ::placeholder,
+ .contact__input,
+ .contact__form-title,
+ .footer__copy{
+    color: #fff;
+    font-family: var(--mono-font);
+ }
+ .contact__list{
+    margin-bottom: 3.25rem;
+
+ }
+
+ .contact__list dt {
+    float: left;
+    font-weight:  var(--bold);
+    text-transform: uppercase;
+ }
