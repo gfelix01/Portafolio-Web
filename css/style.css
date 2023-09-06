@@ -722,5 +722,25 @@ gap: 1.875rem;
 }
 .contact__socials li {
     margin-bottom: 0.75rem;
-    ;
+    
+}
+
+.contact__social-link{
+    font-family: var(--roboto-font);
+}
+.contact__form-title{
+    position: relative;
+}
+.contact__form-title{
+    margin-bottom: 1.25em;
+}
+.contact__input-div{
+    margin-bottom: 0.94em;
+
+}
+.contact__input{
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    padding: 0.625rem;
 }
