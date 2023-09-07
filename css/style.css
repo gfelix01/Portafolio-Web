@@ -752,10 +752,11 @@ gap: 1.875rem;
 .contact__input:focus{
     box-shadow: inset 0 0 5px 0 #fff;
 }
+
 .contact__message {
     font-size: 14px; 
     margin-top: 10px; 
-    color: #555; 
+    color: #fff; 
     
 }
 .color-light{
