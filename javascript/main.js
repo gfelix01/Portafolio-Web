@@ -1,6 +1,6 @@
 
 /*================Mixup Filter================*/
-let mixerProjects = mixitup('.projects__container', {
+const mixerProjects = mixitup('.projects__container', {
     selectors: {
         target: '.project__item',
     },
@@ -22,7 +22,7 @@ linkWork.forEach ((a) => a.addEventListener('click', activeWork));
 
 /*================Testimonial Swiper================*/
 // Initialize Swiper carousel
-var testiSwiper = new Swiper('.testimonial__container ', {
+var testiSwiper = new Swiper('.testimonial__container', {
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -34,35 +34,43 @@ var testiSwiper = new Swiper('.testimonial__container ', {
   mousewheel: true,
   keyboard: true,
 });
+
 /*================Contact Form================*/
 const contactForm = document.getElementById('contact-form');
-const contactName = document.getElementById('contact-name');
-const contactEmail = document.getElementById('contact-email');
-const message = document.getElementById('message');
-const contactMessage = document.getElementById('contact-message');
-const successMessage = document.getElementById('success-message'); // Nuevo elemento para el mensaje de éxito
-
+ contactName = document.getElementById('contact-name');
+ contactEmail = document.getElementById('contact-email');
+ Message = document.getElementById('message');
+ contactMessage = document.getElementById('contact-message');
+ 
 const sendEmail = (e) => {
   e.preventDefault();
 
   if (contactName.value === '' || contactEmail.value === '' || message.value === '') {
     contactMessage.classList.remove('color-light');
     contactMessage.classList.add('color-dark');
+    
     contactMessage.textContent = 'Please fill in all input fields.';
   } else {
-    emailjs.sendForm('service_iannqf9', 'template_l7gl5qv', '#contact-form', 'g5yS7kFZ6s_wl4Y6b')
+       emailjs.sendForm('service_iannqf9', 'template_l7gl5qv', '#contact-form', 'g5yS7kFZ6s_wl4Y6b')
       .then(() => {
         contactMessage.classList.add('color-light');
         contactMessage.textContent = 'Message sent ✅👌🏾';
 
-        // Mostrar el mensaje de éxito y ocultar el formulario
-        successMessage.style.display = 'block';
+        if (successMessage) {
+          // El elemento existe, entonces podemos acceder a su propiedad style
+          successMessage.style.display = 'block';
+        }
+
         contactForm.style.display = 'none';
 
         setTimeout(() => {
           contactMessage.textContent = '';
-          successMessage.style.display = 'none';
-          contactForm.style.display = 'block'; // Volver a mostrar el formulario
+
+          if (successMessage) {
+            successMessage.style.display = 'none';
+          }
+
+          contactForm.style.display = 'block';
         }, 5000);
       });
   }
