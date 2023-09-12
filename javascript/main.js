@@ -72,7 +72,7 @@ const sendEmail = (e) => {
                   contactForm.style.display = 'block';
               }, 5000);
           })
-          .catch((error) => {
+          .catch(function (error) {
               contactMessage.classList.remove('color-light');
               contactMessage.classList.add('color-dark');
               contactMessage.textContent = 'Error sending message. Please try again later.';
